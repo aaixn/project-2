@@ -10,6 +10,9 @@ Use this section to describe your final project and perhaps any links to relevan
 - [deployment]()
 - [demo recording]()
 
+## Technologies
+- API: https://motivational-quote-api.herokuapp.com/
+
 ## Wireframes & React Component Hierarchy
 
 Upload images of wireframes and component hierarchy to cloudinary (or similar) and add the link here with a description of the specific wireframe.
@@ -55,6 +58,7 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 ## Additional Libraries
  Use this section to list all supporting libraries and their role in the project such as Axios, ReactStrap, D3, Bootstrap, Tailwind CSS, etc. 
+ - Axios
 
 ## Code Snippet
 
@@ -68,7 +72,8 @@ function reverse(string) {
 
 ## Issues and Resolutions
  Use this section to list of all major issues encountered and their resolution.
+**ERROR**: blocked by CORS policy
+https://media.git.generalassemb.ly/user/45700/files/22848665-cbbc-4979-98b4-7eeaa28be1b8
+I had trouble with my initial API with CORS blocking me.
 
-#### SAMPLE.....
-**ERROR**: app.js:34 Uncaught SyntaxError: Unexpected identifier                                
-**RESOLUTION**: Missing comma after first object in sources {} object
+**RESOLUTION**:  The workaround required an extension (https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf?hl=en) and the solution for the code was derived from (https://www.geeksforgeeks.org/reactjs-cors-options/). However, I ultimately didn't want users to need to download an extension to use the app, so I found a new API.

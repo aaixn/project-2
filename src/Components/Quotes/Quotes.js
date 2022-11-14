@@ -1,22 +1,18 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 
 
-export default function Quotes() {
+export default function Quotes({quote, quoteDisplay, setQuoteDisplay}) {
 
-    const getQuote = () => {
-        axios.get('https://zenquotes.io/api/random',
-        {
-           headers: {
-            'Access-Control-Allow-Origin': '*'
-           } })
-            .then(res => console.log(res.json()))
-    }
+  // const [quoteDisplay, setQuoteDisplay] = useState(false)
 
-    getQuote()
+
+
   return (
     <div className='Quotes'>
-        <button></button>
+      <h2>{quote.quote}</h2>
+      <h4>-{quote.person}</h4>
+      <p>hi</p>
     </div>
   )
 }

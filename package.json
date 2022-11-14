@@ -1,5 +1,6 @@
 {
   "name": "safe-space",
+  "proxy": "https://zenquotes.io/api/random",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

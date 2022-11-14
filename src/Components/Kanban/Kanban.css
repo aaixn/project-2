@@ -1,0 +1,16 @@
+.kanban {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.chart {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.kanban > button {
+    width: 20%;
+    margin: auto;
+}
