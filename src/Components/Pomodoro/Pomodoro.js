@@ -8,6 +8,10 @@ const Pomodoro = () => {
     const [start, setStart] = useState(false)
 
 
+    const displayMin = min < 10 ? `0${min}` : min
+    const displaySec = sec < 10 ? `0${sec}` : sec
+
+
     useEffect(() => {
         if (start === true) {
 
@@ -15,16 +19,16 @@ const Pomodoro = () => {
                 clearInterval(timer)
                 
                 if (sec === 0) {
-                    if(min !== 0) {
-                        setSec(59)
-                        setMin(min-1)
-                    } else {
+                    if(min === 0) {
                         let minutes = message ? 24 : 4
                         let seconds = 59
     
                         setSec(seconds)
                         setMin(minutes)
                         setMessage(!message)
+                    } else {
+                        setSec(59)
+                        setMin(min-1)
                     }
                 } else {
                     setSec(sec - 1)
@@ -39,18 +43,15 @@ const Pomodoro = () => {
         setStart(!start)
     }
 
-    
-    const timerMin = min < 10 ? `0${min}` : min
-    const timerSec = sec < 10 ? `0${sec}` : sec
 
 
 
     return(
         <div className='pomodoro'>
             <div className="message">
-                {message ?? <div>It's time for a break!</div>}
+                {message ? 'good work! time for a break!' : 'get to work!'}
             </div>
-            <div className="timer">{timerMin}:{timerSec}</div>
+            <div className="timer">{displayMin}:{displaySec}</div>
             <button className="start" onClick={startClicked}>{start ? 'pause' : 'start'}</button>
         </div>
     )
