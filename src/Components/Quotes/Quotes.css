@@ -1,0 +1,10 @@
+.quotes {
+    color: black;
+    text-shadow: 2px 2px white;
+    /* box-sizing: border-box; */
+    margin-top: none;
+}
+
+.quotes > h2 {
+    margin-top: 0px;
+}

@@ -1,0 +1,31 @@
+.pomodoro {
+    color: salmon;
+}
+
+
+.timer {
+    font-size: 8rem;
+    text-shadow: 8px 8px darkslategray;
+    margin-top: 0px;
+}
+
+.message{
+    margin-top: 0px;
+    font-size: 2rem;
+    color: darkslategray;
+    text-shadow: 5px 5px salmon;
+}
+
+.start {
+    background-color: darkslategray;
+    font-family: groovy, sans-serif;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 8rem;
+    height: 2rem;
+    font-size: 1.5rem;
+    box-shadow: 8px 8px salmon;
+    color: white;
+    letter-spacing: 0.3em;
+  }

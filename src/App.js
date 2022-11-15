@@ -5,11 +5,17 @@ import AddToDo from './Components/Kanban/AddToDo';
 import Kanban from './Components/Kanban/Kanban';
 import Pomodoro from './Components/Pomodoro/Pomodoro';
 import Quotes from './Components/Quotes/Quotes';
+import Toolbar from './Components/Toolbar/Toolbar';
+import {BsFillChatQuoteFill} from 'react-icons/bs'
 
 function App() {
 
   const [quote, setQuote] = useState('')
   const [quoteDisplay, setQuoteDisplay] = useState(false)
+  const [kanbanDisplay, setKanbanDisplay] = useState(false)
+  const [musicDisplay, setMusicDisplay] = useState(false)
+  const [calendarDisplay, setCalendarDisplay] = useState(false)
+
 
 
   const getQuote = () => {
@@ -21,20 +27,20 @@ function App() {
     setQuoteDisplay(!quoteDisplay)
     getQuote()
 
-    setTimeout(() => {
-      setQuoteDisplay(false)
-    }, 10000)
-  
-
+    // setTimeout(() => {
+    //   setQuoteDisplay(false)
+    // }, 10000)
   }
 
   return (
     <div className="App">
-      <button onClick={handleQuoteButton}>" "</button>
+      <div className='quote-div'><BsFillChatQuoteFill className='quote-button' onClick={handleQuoteButton}/></div>
       {quoteDisplay && <Quotes quote = {quote} quoteDisplay={quoteDisplay} setQuoteDisplay={setQuoteDisplay}/>}
       <Pomodoro />
-      {/* <Kanban /> */}
+      {kanbanDisplay && <Kanban />}
       {/* <AddToDo /> */}
+      <footer><Toolbar kanbanDisplay={kanbanDisplay} setKanbanDisplay = {setKanbanDisplay}/>
+      </footer>
     </div>
   );
 }

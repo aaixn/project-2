@@ -1,18 +1,12 @@
-import React, { useEffect, useState } from 'react'
-import axios from 'axios'
+import React from 'react'
+import '../Quotes/Quotes.css'
 
 
-export default function Quotes({quote, quoteDisplay, setQuoteDisplay}) {
-
-  // const [quoteDisplay, setQuoteDisplay] = useState(false)
-
-
-
+export default function Quotes({quote}) {
   return (
-    <div className='Quotes'>
+    <div className='quotes'>
       <h2>{quote.quote}</h2>
       <h4>-{quote.person}</h4>
-      <p>hi</p>
     </div>
   )
 }

@@ -1,3 +1,52 @@
+@font-face {
+  font-family: lofi;
+  src: url(./Fonts/DIGILF__.woff);
+}
+
+@font-face {
+  font-family: handwriting;
+  src: url(./Fonts/TNanti-Demo.otf);
+}
+
+@font-face {
+  font-family: digital;
+  src: url(./Fonts/digital-7.ttf);
+}
+
+@font-face {
+  font-family: groovy;
+  src: url(./Fonts/KeeponTruckin.ttf);
+}
+
+
 .App {
   text-align: center;
+  font-family: groovy, sans-serif;
+  height: 100vh;
+  width: 100%;
+  background-color: ivory;
+}
+
+footer {
+  position: absolute;
+  bottom: 5%;
+  height: 2.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+
+.quote-button {
+  font-size: 2rem;
+  padding-top: 15px;
+  padding-right: 15px;
+  color: darkslategray;
+  cursor: pointer;
+}
+
+.quote-div {
+  display: flex;
+  flex-direction: row-reverse;
 }

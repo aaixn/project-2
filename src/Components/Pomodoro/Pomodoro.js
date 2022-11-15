@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import '../Pomodoro/Pomodoro.css'
 
 const Pomodoro = () => {
 
@@ -48,10 +49,12 @@ const Pomodoro = () => {
 
     return(
         <div className='pomodoro'>
-            <div className="message">
-                {message ? 'good work! time for a break!' : 'get to work!'}
+            <div>
+                <p className="message">{message ? 'good work! time for a break!' : 'get to work!'}</p>
             </div>
-            <div className="timer">{displayMin}:{displaySec}</div>
+            <div>
+                <h1 className="timer">{displayMin}:{displaySec}</h1>
+            </div>
             <button className="start" onClick={startClicked}>{start ? 'pause' : 'start'}</button>
         </div>
     )
