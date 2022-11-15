@@ -37,6 +37,12 @@ footer {
   padding-right: 5%;
 }
 
+button {
+  font-family: groovy, sans-serif;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
 
 .quote-button {
   font-size: 2rem;
