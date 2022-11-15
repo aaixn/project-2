@@ -32,6 +32,8 @@ function App() {
     // }, 10000)
   }
 
+
+  
   return (
     <div className="App">
       <div className='quote-div'><BsFillChatQuoteFill className='quote-button' onClick={handleQuoteButton}/></div>
