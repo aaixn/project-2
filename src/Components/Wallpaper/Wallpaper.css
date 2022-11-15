@@ -1,0 +1,35 @@
+.wallpaper-list {
+    /* background-color: white; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.wallpaper {
+    width: 20%;
+    cursor: pointer;
+    box-shadow: 7px 7px salmon;
+}
+
+.wallpaper-select {
+    background-color: oldlace;
+    padding: 20px;
+}
+
+.return-study {
+    width: 15rem;
+    height: 2rem;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    background-color: darkslategray;
+    color: white;
+    box-shadow: 5px 5px salmon;
+}
+
+.wallpaper-select > h1 {
+    color: darkslategray;
+    text-shadow: 6px 6px salmon;
+    font-size: 3rem;
+    /* background-color: cornsilk; */
+}
