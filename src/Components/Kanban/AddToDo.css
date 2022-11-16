@@ -9,7 +9,6 @@
     align-items: center;
     width: 80%;
     margin: 1em 0 1em 0;
-    /* border: 2px solid; */
 }
 
 .add-todo-button {
@@ -17,4 +16,5 @@
     background-color: salmon;
     box-shadow: 5px 5px darkslategray;
     margin-top: 1em;
+    color: white;
 }

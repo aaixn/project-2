@@ -5,7 +5,6 @@ import Pomodoro from '../Pomodoro/Pomodoro';
 import Quotes from '../Quotes/Quotes';
 import Toolbar from '../Toolbar/Toolbar';
 import {BsFillChatQuoteFill} from 'react-icons/bs'
-import Notepad from '../Notepad/Notepad';
 import '../Home/Home.css'
 
 
@@ -38,7 +37,6 @@ export default function Home() {
         {quoteDisplay && <Quotes quote = {quote} quoteDisplay={quoteDisplay} setQuoteDisplay={setQuoteDisplay}/>}
         <Pomodoro />
         {kanbanDisplay && <Kanban />}
-        {/* <Notepad /> */}
         <footer><Toolbar kanbanDisplay={kanbanDisplay} setKanbanDisplay = {setKanbanDisplay}/>
         </footer>
     </div>

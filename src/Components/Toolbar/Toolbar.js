@@ -5,7 +5,7 @@ import {BsMusicNoteBeamed} from 'react-icons/bs'
 import {BsFillCheckSquareFill} from 'react-icons/bs'
 import {BsFillStickyFill} from 'react-icons/bs'
 import {BsFillImageFill} from 'react-icons/bs'
-import {Router, Route, Link} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 
 export default function Toolbar({kanbanDisplay, setKanbanDisplay}) {
   return (

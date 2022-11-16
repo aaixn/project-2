@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
 .kanban {
     display: flex;
     flex-direction: column;
@@ -6,6 +8,7 @@
     box-shadow: 7px 7px darkslategray;
     background-color: white;
     border: 1px solid;
+
 }
 
 .chart {
@@ -15,23 +18,31 @@
 }
 
 
-.kanban > button {
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    margin: auto;
-    color: white;
-    background-color: salmon;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .kanban-item {
     cursor: pointer;
+    margin: 0px 0px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .kanban-section > h3 {
     color: salmon;
     text-decoration: underline;
+    margin-bottom: 0px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.1em;
+}
+
+.kanban-section{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+
+.move-section {
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
 }
