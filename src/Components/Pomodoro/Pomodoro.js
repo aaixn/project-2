@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import '../Pomodoro/Pomodoro.css'
+import Draggable from "react-draggable";
 
 const Pomodoro = () => {
 
@@ -48,15 +49,17 @@ const Pomodoro = () => {
 
 
     return(
-        <div className='pomodoro'>
-            <div>
-                <p className="message">{message ? 'good work! time for a break!' : 'get to work!'}</p>
+        <Draggable>
+            <div className='pomodoro'>
+                <div>
+                    <p className="message">{message ? 'good work! time for a break!' : 'get to work!'}</p>
+                </div>
+                <div>
+                    <h1 className="timer">{displayMin}:{displaySec}</h1>
+                </div>
+                <button className="start" onClick={startClicked}>{start ? 'pause' : 'start'}</button>
             </div>
-            <div>
-                <h1 className="timer">{displayMin}:{displaySec}</h1>
-            </div>
-            <button className="start" onClick={startClicked}>{start ? 'pause' : 'start'}</button>
-        </div>
+        </Draggable>
     )
 }
 

@@ -3,6 +3,7 @@ import '../Kanban/Kanban.css'
 import {BsFillArrowLeftCircleFill} from 'react-icons/bs'
 import {BsFillArrowRightCircleFill} from 'react-icons/bs'
 import AddToDo from './AddToDo'
+import Draggable from 'react-draggable'
 
 export default function Kanban() {
     const [addToDo, setAddToDo] = useState(false)
@@ -61,57 +62,59 @@ export default function Kanban() {
     }
 
   return (
-    <div className='kanban'>
-        <div className='chart'>
-            <div className='kanban-section'>
-                <h3>to do</h3>
-                {(kanban.todo.map((item, key) => {
-                    return <p className='kanban-item' key={key} onClick={() => setMoveItem(item)}>{item}</p>
-                }))}
-                <BsFillArrowRightCircleFill onClick={()=> {
-                    moveInProg()
-                    setkanban(kanban => ({
-                        ...kanban,
-                        todo: kanban.todo.filter(item => item !== moveItem)
-                    }))
-                    }} cursor='pointer'/>
+    <Draggable>
+        <div className='kanban'>
+            <div className='chart'>
+                <div className='kanban-section'>
+                    <h3>to do</h3>
+                    {(kanban.todo.map((item, key) => {
+                        return <p className='kanban-item' key={key} onClick={() => setMoveItem(item)}>{item}</p>
+                    }))}
+                    <BsFillArrowRightCircleFill onClick={()=> {
+                        moveInProg()
+                        setkanban(kanban => ({
+                            ...kanban,
+                            todo: kanban.todo.filter(item => item !== moveItem)
+                        }))
+                        }} cursor='pointer'/>
+                </div>
+                <div className='kanban-section'>
+                    <h3>in progress</h3>
+                    {(kanban.inProg.map((item, key) => {
+                        return <p className='kanban-item' key={key} onClick={() => setMoveItem(item)}>{item}</p>
+                    }))}
+                    <BsFillArrowLeftCircleFill onClick={()=> {
+                        moveToDo()
+                        setkanban(kanban => ({
+                            ...kanban,
+                            inProg: kanban.inProg.filter(item => item !== moveItem)
+                        }))
+                        }} cursor='pointer'/>
+                    <BsFillArrowRightCircleFill onClick={()=> {
+                        moveComplete()
+                        setkanban(kanban => ({
+                            ...kanban,
+                            inProg: kanban.inProg.filter(item => item !== moveItem)
+                        }))
+                        }} cursor='pointer'/>
+                </div>
+                <div className='kanban-section'>
+                    <h3>complete</h3>
+                    {(kanban.complete.map((item, key) => {
+                        return <p className='kanban-item' key={key} onClick={() => setMoveItem(item)}>{item}</p>
+                    }))}
+                    <BsFillArrowLeftCircleFill onClick={()=> {
+                        moveInProg()
+                        setkanban(kanban => ({
+                            ...kanban,
+                            complete: kanban.complete.filter(item => item !== moveItem)
+                        }))
+                        }} cursor='pointer'/>
+                </div>
             </div>
-            <div className='kanban-section'>
-                <h3>in progress</h3>
-                {(kanban.inProg.map((item, key) => {
-                    return <p className='kanban-item' key={key} onClick={() => setMoveItem(item)}>{item}</p>
-                }))}
-                <BsFillArrowLeftCircleFill onClick={()=> {
-                    moveToDo()
-                    setkanban(kanban => ({
-                        ...kanban,
-                        inProg: kanban.inProg.filter(item => item !== moveItem)
-                    }))
-                    }} cursor='pointer'/>
-                <BsFillArrowRightCircleFill onClick={()=> {
-                    moveComplete()
-                    setkanban(kanban => ({
-                        ...kanban,
-                        inProg: kanban.inProg.filter(item => item !== moveItem)
-                    }))
-                    }} cursor='pointer'/>
-            </div>
-            <div className='kanban-section'>
-                <h3>complete</h3>
-                {(kanban.complete.map((item, key) => {
-                    return <p className='kanban-item' key={key} onClick={() => setMoveItem(item)}>{item}</p>
-                }))}
-                <BsFillArrowLeftCircleFill onClick={()=> {
-                    moveInProg()
-                    setkanban(kanban => ({
-                        ...kanban,
-                        complete: kanban.complete.filter(item => item !== moveItem)
-                    }))
-                    }} cursor='pointer'/>
-            </div>
+            <button onClick={() => {setAddToDo(true)}}>+</button>
+            {addToDo && <AddToDo addToDo={addToDo} setAddToDo = {setAddToDo}/>}
         </div>
-        <button onClick={() => {setAddToDo(true)}}>+</button>
-        {addToDo && <AddToDo addToDo={addToDo} setAddToDo = {setAddToDo}/>}
-    </div>
+    </Draggable>
   )
 }

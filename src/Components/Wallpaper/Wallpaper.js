@@ -10,7 +10,7 @@ export default function Wallpaper({setWallpaper}) {
         <div className='wallpaper-list'>
             {wallpapers.map((item, key) => {
                 return(
-                    <img src={item} key={key} className='wallpaper' onClick={() => {
+                    <img src={item} alt='wallpaper' key={key} className='wallpaper' onClick={() => {
                       setWallpaper(item)
                     }}></img>
                 )
