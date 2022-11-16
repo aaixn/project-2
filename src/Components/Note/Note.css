@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap');
+
+.note {
+    background-color: white;
+    width: 20%;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.7);
+    cursor: grab;
+    font-family: 'Work Sans', sans-serif;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.note-title, .note-content {
+    cursor: text;
+}
+
+.note-content {
+    text-align: left;
+    margin: 0 5px;
+}
+
