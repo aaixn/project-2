@@ -1,13 +1,14 @@
 import React from 'react'
+import '../Kanban/AddToDo.css'
 
-export default function AddToDo(props) {
+export default function AddToDo({setAddToDo, addToDo}) {
 
 
   return (
-    <div>
+    <div className='add-todo'>
       <form>
         <input type='text'></input>
-        <button>add to todo</button>
+        <button className='add-todo-button' onClick={() => setAddToDo(!addToDo)}>add to todo</button>
       </form>
     </div>
   )

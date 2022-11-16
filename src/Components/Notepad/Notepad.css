@@ -1,0 +1,14 @@
+.input-note {
+    margin: auto;
+    margin-bottom: 200px;
+    border: 2px solid;
+}
+
+.input-note > textarea {
+    border: none;
+    box-shadow: 5px 5px black;
+    border-radius: 10px;
+    height: 100px;
+    width: 300px;
+}
+

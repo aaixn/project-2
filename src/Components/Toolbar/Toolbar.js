@@ -14,7 +14,7 @@ export default function Toolbar({kanbanDisplay, setKanbanDisplay}) {
         <div className='tool'><BsMusicNoteBeamed /></div>
         <div className='tool'><BsFillCheckSquareFill onClick={() => setKanbanDisplay(!kanbanDisplay)}/></div>
         <div className='tool'><BsFillStickyFill /></div>
-        <Link to='/wallpapers'><div className='tool'><BsFillImageFill /></div></Link>
+        <Link to='/wallpapers'><div className='tool'><BsFillImageFill color='salmon'/></div></Link>
     </div>
   )
 }

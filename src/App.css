@@ -31,7 +31,7 @@
 
 footer {
   position: absolute;
-  bottom: 5%;
+  bottom: 15px;
   height: 2.5rem;
   width: 100%;
   box-sizing: border-box;

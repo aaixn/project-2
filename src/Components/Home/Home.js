@@ -5,6 +5,8 @@ import Pomodoro from '../Pomodoro/Pomodoro';
 import Quotes from '../Quotes/Quotes';
 import Toolbar from '../Toolbar/Toolbar';
 import {BsFillChatQuoteFill} from 'react-icons/bs'
+import Notepad from '../Notepad/Notepad';
+import '../Home/Home.css'
 
 
 export default function Home() {
@@ -25,19 +27,20 @@ export default function Home() {
     setQuoteDisplay(!quoteDisplay)
     getQuote()
 
-    // setTimeout(() => {
-    //   setQuoteDisplay(false)
-    // }, 10000)
+    setTimeout(() => {
+      setQuoteDisplay(false)
+    }, 10000)
   }
 
-  return (
+    return (
     <div className='home'>
-      <div className='quote-div'><BsFillChatQuoteFill className='quote-button' onClick={handleQuoteButton}/></div>
-      {quoteDisplay && <Quotes quote = {quote} quoteDisplay={quoteDisplay} setQuoteDisplay={setQuoteDisplay}/>}
-      <Pomodoro />
-      {kanbanDisplay && <Kanban />}
-      <footer><Toolbar kanbanDisplay={kanbanDisplay} setKanbanDisplay = {setKanbanDisplay}/>
-      </footer>
+        <div className='quote-div'><BsFillChatQuoteFill className='quote-button' onClick={handleQuoteButton}/></div>
+        {quoteDisplay && <Quotes quote = {quote} quoteDisplay={quoteDisplay} setQuoteDisplay={setQuoteDisplay}/>}
+        <Pomodoro />
+        {kanbanDisplay && <Kanban />}
+        {/* <Notepad /> */}
+        <footer><Toolbar kanbanDisplay={kanbanDisplay} setKanbanDisplay = {setKanbanDisplay}/>
+        </footer>
     </div>
-  )
-}
+    )
+    }
