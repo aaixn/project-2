@@ -28,33 +28,3 @@
   background-image: url('https://i.imgur.com/UlPvCp3.png');
   background-size: cover;
 }
-
-footer {
-  position: absolute;
-  bottom: 15px;
-  height: 2.5rem;
-  width: 100%;
-  box-sizing: border-box;
-  padding-left: 5%;
-  padding-right: 5%;
-}
-
-button {
-  font-family: groovy, sans-serif;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-}
-
-.quote-button {
-  font-size: 2rem;
-  padding-top: 15px;
-  padding-right: 15px;
-  color: darkslategray;
-  cursor: pointer;
-}
-
-.quote-div {
-  display: flex;
-  flex-direction: row-reverse;
-}
