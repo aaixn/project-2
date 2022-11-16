@@ -127,7 +127,7 @@ export default function Kanban() {
                     </div>
                 </div>
             </div>
-            {addToDo && <AddToDo addToDo={addToDo} setAddToDo = {setAddToDo}/>}
+            {addToDo && <AddToDo addToDo={addToDo} setAddToDo = {setAddToDo} kanban = {kanban} setkanban = {setkanban}/>}
         </div>
     </Draggable>
   )

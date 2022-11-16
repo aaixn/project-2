@@ -18,3 +18,8 @@
     margin-top: 1em;
     color: white;
 }
+
+.todo-input {
+    border: 1px solid gray;
+    border-radius: 5px;
+}
