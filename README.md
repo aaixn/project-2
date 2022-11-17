@@ -7,58 +7,67 @@ Use this section to describe your final project and perhaps any links to relevan
 ## Project Links
 
 - [github repo](https://github.com/aaixn/study-space)
-- [deployment]()
+- [deployment](https://study-space-10crpfv3q-aaixn.vercel.app/)
 - [demo recording]()
 
-## Technologies
+## Technologies/Sources
 - API: https://motivational-quote-api.herokuapp.com/
+- Wallpapers from https://imgur.com/user/IschemiaLad
 
 ## Wireframes & React Component Hierarchy
 
-Upload images of wireframes and component hierarchy to cloudinary (or similar) and add the link here with a description of the specific wireframe.
+- [wireframes](https://media.git.generalassemb.ly/user/45700/files/5a096ff8-1efb-4fa6-bcea-8157e4642c11)
+- [react architecture](https://files.slack.com/files-pri/T0351JZQ0-F04BG3ESMQS/image.png)
 
-- [wireframes]()
-- [react architecture]()
 
-Define the the React components and the architectural design of your app.
+## MVP/PostMVP 
 
-### MVP/PostMVP
+#### MVP
+- Find and use external api (motivational quotes)
+- Render data on page when user clicks on the quote button
+- Display a pomodoro style timer
 
-The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decide what is placed into your MVP as the "client" will expect this functionality to be implemented upon project completion.  
+#### PostMVP
 
-#### MVP EXAMPLE
-- Find and use external api 
-- Render data on page 
-- Allow user to interact with the page
-
-#### PostMVP EXAMPLE
-
-- Add localStorage or firebase (or similar) for storage
+- Add a kanban board
+- Add a notepad
+- Display user's date and time
+- Add a music player
+- Allow users to change wallpaper
+- Make widgets draggable
+- Implement local storage
 
 ## Components
-##### Writing out your components and its descriptions isn't a required part of the proposal but can be helpful.
-
-Based on the initial logic defined in the previous sections try and breakdown the logic further into stateless/stateful components. 
 
 | Component | Description | 
 | --- | :---: |  
-| App | This will make the initial data pull and include React Router| 
-| Header | This will render the header, include the nav | 
-| Footer | This will render the footer, include links to github repo | 
+| App | Include React Router| 
+| Home | Conditionally render the components in the toolbar depending on each components' display state and initially grab the quote data | 
+| Toolbar | Change component display on when clicked and link to the wallpaper selection page | 
+| MotivationalQuote | Display a random quote and its author depending on the quote state | 
+| KanbanBoard | Display a kanban board that has the functionality to move items from each section | 
+| AddToDo | Child of the KanbanBoard. Display a form that prompts the user to input and add the user's input to the todo section of the kanban board | 
+| Pomodoro | Display a timer that runs 25 min and 5 min interchangeably according to the pomodoro method| 
+| Notes | An editable note that you can also discard | 
+| DateTime | Display the user's current date and time | 
+| Wallpaper | Display a page where user can select from a library of wallpapers to set for their space | 
+
 
 ## Time Frames
 
-Time frames are also key in the development cycle.  You have limited time to code all phases of the project.  Your estimates can then be used to evaluate project possibilities based on time needed and the actual time you have before the project must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add an additional hour or two to each component to play it safe. 
 
-| Component | Priority | Estimated Time | Time Invested | Actual Time |
-| --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
-| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
-| Total | H | 6hrs| 5hrs | 5hrs |
+| Component | Priority | Estimated Time | Actual Time |
+| --- | :---: |  :---: | :---: |
+| Working with API | H | 3hrs| 5hrs |
+| Adding Pomodoro Timer | H | 4hrs | 1.5hrs |
+| Making components draggable | M | 5hrs | 1hrs |
+| Styling | L | 10hrs| 7hrs |
+| Total | H | 6hrs| 5hrs |
 
-## Additional Libraries
- Use this section to list all supporting libraries and their role in the project such as Axios, ReactStrap, D3, Bootstrap, Tailwind CSS, etc. 
+## Additional Libraries/ Packages
  - Axios
+ - react-draggable
+ - react-icons (Bootstrap Icons)
 
 ## Code Snippet
 
