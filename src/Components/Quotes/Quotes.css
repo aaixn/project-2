@@ -1,10 +1,22 @@
-.quotes {
-    color: black;
-    text-shadow: 2px 2px white;
-    /* box-sizing: border-box; */
-    margin-top: none;
+@font-face {
+    font-family: quote;
+    src: url('../../Fonts/PoemLettersSerifRegular-lgggX.ttf');
 }
 
-.quotes > h2 {
-    margin-top: 0px;
+.quotes {
+    color: #444444;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 50%;
+    margin: auto;
+    padding: 1.5em 1em 0 1em;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    border-radius: 20px;
+    box-shadow: 7px 7px darkslategray;
+    font-family: quote, sans-serif;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
 }

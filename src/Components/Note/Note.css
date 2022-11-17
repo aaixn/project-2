@@ -3,16 +3,24 @@
 .note {
     background-color: white;
     width: 20%;
-    box-shadow: 5px 5px rgba(0, 0, 0, 0.7);
+    box-shadow: 7px 7px darkslategray;
     cursor: grab;
     font-family: 'Work Sans', sans-serif;
     padding: 5px;
     display: flex;
     flex-direction: column;
+    color: #444444;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 0.5em;
+    border-radius: 20px;
 }
 
 .note-title, .note-content {
     cursor: text;
+}
+
+.note-title {
+    color: salmon;
 }
 
 .note-content {

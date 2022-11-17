@@ -14,3 +14,7 @@
     background-color: white;
     margin: auto;
 }
+
+.play-button {
+    cursor: pointer;
+}

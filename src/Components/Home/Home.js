@@ -18,6 +18,7 @@ export default function Home() {
     const [musicDisplay, setMusicDisplay] = useState(false)
     const [dateDisplay, setDateDisplay] = useState(false)
     const [noteDisplay, setNoteDisplay] = useState(false)
+    const [pomodoroDisplay, setPomodoroDisplay] = useState(true)
 
 
 
@@ -30,22 +31,22 @@ export default function Home() {
     setQuoteDisplay(!quoteDisplay)
     getQuote()
 
-    setTimeout(() => {
-      setQuoteDisplay(false)
-    }, 10000)
+    // setTimeout(() => {
+    //   setQuoteDisplay(false)
+    // }, 10000)
   }
 
     return (
     <div className='home'>
         <div className='quote-div'><BsFillChatQuoteFill className='quote-button' onClick={handleQuoteButton}/></div>
         {quoteDisplay && <Quotes quote = {quote} quoteDisplay={quoteDisplay} setQuoteDisplay={setQuoteDisplay}/>}
-        <Pomodoro />
+        {pomodoroDisplay && <Pomodoro />}
         {kanbanDisplay && <Kanban />}
         {noteDisplay && <Note setNoteDisplay={setNoteDisplay}/>}
         {dateDisplay && <DateTime/>}
-        <MusicPlayer />
+        {/* <MusicPlayer /> */}
         <footer>
-          <Toolbar kanbanDisplay={kanbanDisplay} setKanbanDisplay = {setKanbanDisplay} noteDisplay = {noteDisplay} setNoteDisplay = {setNoteDisplay} dateDisplay={dateDisplay} setDateDisplay={setDateDisplay}/>
+          <Toolbar kanbanDisplay={kanbanDisplay} setKanbanDisplay = {setKanbanDisplay} noteDisplay = {noteDisplay} setNoteDisplay = {setNoteDisplay} dateDisplay={dateDisplay} setDateDisplay={setDateDisplay} pomodoroDisplay = {pomodoroDisplay} setPomodoroDisplay = {setPomodoroDisplay}/>
         </footer>
     </div>
     )

@@ -5,8 +5,8 @@ import '../Quotes/Quotes.css'
 export default function Quotes({quote}) {
   return (
     <div className='quotes'>
-      <h2>{quote.quote}</h2>
-      <h4>-{quote.person}</h4>
+      <h1>{quote.quote}</h1>
+      <h2>-{quote.person}</h2>
     </div>
   )
 }

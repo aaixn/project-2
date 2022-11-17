@@ -9,7 +9,7 @@ import Draggable from 'react-draggable'
 export default function Kanban() {
 
     const moveStyle = {
-        color: 'gray',
+        color: '444444',
         cursor: 'pointer',
         fontSize: '1.3em',
     }
@@ -17,9 +17,9 @@ export default function Kanban() {
     const [addToDo, setAddToDo] = useState(false)
 
     const [kanban, setkanban] = useState({ 
-        todo: ['po', 'goop', 'buh'],
-        inProg: ['pung', 'bung'],
-        complete: ['gung', 'guh', 'puh'],
+        todo: [],
+        inProg: [],
+        complete: [],
     })
 
     const [moveItem, setMoveItem] = useState('')

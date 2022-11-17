@@ -17,7 +17,7 @@ export default function Note({setNoteDisplay}) {
             </div>
             <BsFillTrashFill style={{
                 alignSelf: 'flex-end',
-                color:'gray',
+                color: '#ed1c24',
                 cursor:'pointer',
             }}
             onClick = {() => {

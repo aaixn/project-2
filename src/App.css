@@ -1,17 +1,9 @@
-@font-face {
-  font-family: lofi;
-  src: url(./Fonts/DIGILF__.woff);
-}
 
 @font-face {
   font-family: handwriting;
   src: url(./Fonts/TNanti-Demo.otf);
 }
 
-@font-face {
-  font-family: digital;
-  src: url(./Fonts/digital-7.ttf);
-}
 
 @font-face {
   font-family: groovy;
