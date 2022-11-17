@@ -1,0 +1,9 @@
+.clock {
+    cursor: grab;
+    width: 20%;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 0.5em;
+    border-radius: 20px;
+    box-shadow: 5px 5px darkslategray;
+    color: darkslategray;
+}

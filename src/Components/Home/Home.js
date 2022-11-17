@@ -7,6 +7,8 @@ import Toolbar from '../Toolbar/Toolbar';
 import {BsFillChatQuoteFill} from 'react-icons/bs'
 import '../Home/Home.css'
 import Note from '../Note/Note';
+import MusicPlayer from '../MusicPlayer/MusicPlayer';
+import DateTime from '../DateTime/DateTime';
 
 
 export default function Home() {
@@ -14,7 +16,7 @@ export default function Home() {
     const [quoteDisplay, setQuoteDisplay] = useState(false)
     const [kanbanDisplay, setKanbanDisplay] = useState(false)
     const [musicDisplay, setMusicDisplay] = useState(false)
-    const [calendarDisplay, setCalendarDisplay] = useState(false)
+    const [dateDisplay, setDateDisplay] = useState(false)
     const [noteDisplay, setNoteDisplay] = useState(false)
 
 
@@ -40,7 +42,10 @@ export default function Home() {
         <Pomodoro />
         {kanbanDisplay && <Kanban />}
         {noteDisplay && <Note setNoteDisplay={setNoteDisplay}/>}
-        <footer><Toolbar kanbanDisplay={kanbanDisplay} setKanbanDisplay = {setKanbanDisplay} noteDisplay = {noteDisplay} setNoteDisplay = {setNoteDisplay}/>
+        {dateDisplay && <DateTime/>}
+        <MusicPlayer />
+        <footer>
+          <Toolbar kanbanDisplay={kanbanDisplay} setKanbanDisplay = {setKanbanDisplay} noteDisplay = {noteDisplay} setNoteDisplay = {setNoteDisplay} dateDisplay={dateDisplay} setDateDisplay={setDateDisplay}/>
         </footer>
     </div>
     )

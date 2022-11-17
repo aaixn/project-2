@@ -10,6 +10,9 @@
     background-color: white;
     border: 1px solid;
     cursor: grab;
+    /* background-color: rgba(255, 255, 255, 0.4);
+    padding: 0.5em;
+    border-radius: 20px; */
 }
 
 .chart {

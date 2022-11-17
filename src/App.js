@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './App.css';
 import Wallpaper from './Components/Wallpaper/Wallpaper';
 import { Route, Routes } from 'react-router-dom';

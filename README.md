@@ -6,7 +6,7 @@ Use this section to describe your final project and perhaps any links to relevan
 
 ## Project Links
 
-- [github repo]()
+- [github repo](https://github.com/aaixn/study-space)
 - [deployment]()
 - [demo recording]()
 
