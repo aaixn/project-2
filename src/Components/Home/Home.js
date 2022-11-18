@@ -9,6 +9,7 @@ import '../Home/Home.css'
 import Note from '../Note/Note';
 import MusicPlayer from '../MusicPlayer/MusicPlayer';
 import DateTime from '../DateTime/DateTime';
+import musicLibrary from '../MusicPlayer/MusicLibrary'
 
 
 export default function Home() {
@@ -31,22 +32,22 @@ export default function Home() {
     setQuoteDisplay(!quoteDisplay)
     getQuote()
 
-    // setTimeout(() => {
-    //   setQuoteDisplay(false)
-    // }, 10000)
+    setTimeout(() => {
+      setQuoteDisplay(false)
+    }, 10000)
   }
 
     return (
     <div className='home'>
-        <div className='quote-div'><BsFillChatQuoteFill className='quote-button' onClick={handleQuoteButton}/></div>
+        <div className='quote-div'><BsFillChatQuoteFill className='quote-button' onClick={handleQuoteButton} style={{fontSize: '2.5em'}}/></div>
         {quoteDisplay && <Quotes quote = {quote} quoteDisplay={quoteDisplay} setQuoteDisplay={setQuoteDisplay}/>}
         {pomodoroDisplay && <Pomodoro />}
         {kanbanDisplay && <Kanban />}
         {noteDisplay && <Note setNoteDisplay={setNoteDisplay}/>}
         {dateDisplay && <DateTime/>}
-        {/* <MusicPlayer /> */}
+        {musicDisplay && <MusicPlayer musicLibrary = {musicLibrary}/>}
         <footer>
-          <Toolbar kanbanDisplay={kanbanDisplay} setKanbanDisplay = {setKanbanDisplay} noteDisplay = {noteDisplay} setNoteDisplay = {setNoteDisplay} dateDisplay={dateDisplay} setDateDisplay={setDateDisplay} pomodoroDisplay = {pomodoroDisplay} setPomodoroDisplay = {setPomodoroDisplay}/>
+          <Toolbar kanbanDisplay={kanbanDisplay} setKanbanDisplay = {setKanbanDisplay} noteDisplay = {noteDisplay} setNoteDisplay = {setNoteDisplay} dateDisplay={dateDisplay} setDateDisplay={setDateDisplay} pomodoroDisplay = {pomodoroDisplay} setPomodoroDisplay = {setPomodoroDisplay} musicDisplay = {musicDisplay} setMusicDisplay = {setMusicDisplay}/>
         </footer>
     </div>
     )

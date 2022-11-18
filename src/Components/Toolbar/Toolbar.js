@@ -8,11 +8,11 @@ import {BsFillImageFill} from 'react-icons/bs'
 import {GiTomato} from 'react-icons/gi'
 import {Link} from 'react-router-dom'
 
-export default function Toolbar({kanbanDisplay, setKanbanDisplay, noteDisplay, setNoteDisplay, dateDisplay, setDateDisplay, pomodoroDisplay, setPomodoroDisplay}) {
+export default function Toolbar({kanbanDisplay, setKanbanDisplay, noteDisplay, setNoteDisplay, dateDisplay, setDateDisplay, pomodoroDisplay, setPomodoroDisplay, musicDisplay, setMusicDisplay}) {
   return (
     <div className='toolbar'>
         <div className='tool'><BsCalendarEvent onClick={() => setDateDisplay(!dateDisplay)}/></div>
-        <div className='tool'><BsMusicNoteBeamed /></div>
+        <div className='tool'><BsMusicNoteBeamed onClick={() => setMusicDisplay(!musicDisplay)}/></div>
         <div className='tool'><BsFillKanbanFill onClick={() => setKanbanDisplay(!kanbanDisplay)}/></div>
         <div className='tool'><BsPencilSquare onClick={() => setNoteDisplay(!noteDisplay)}/></div>
         <div className='tool' onClick={() => setPomodoroDisplay(!pomodoroDisplay)}><GiTomato /></div>

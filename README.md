@@ -13,6 +13,7 @@ Use this section to describe your final project and perhaps any links to relevan
 ## Technologies/Sources
 - API: https://motivational-quote-api.herokuapp.com/
 - Wallpapers from https://imgur.com/user/IschemiaLad
+- Music from https://www.chosic.com/free-music/lofi/
 
 ## Wireframes & React Component Hierarchy
 

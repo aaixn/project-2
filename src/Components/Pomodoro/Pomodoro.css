@@ -1,17 +1,17 @@
 .pomodoro {
     color: salmon;
-    width: 30%;
+    width: 25%;
     cursor: grab;
     margin: auto;
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 1em;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 2em;
     border-radius: 20px;
     box-shadow: 10px 10px darkslategray;
 }
 
 
 .timer {
-    font-size: 8rem;
+    font-size: 7vw;
     text-shadow: 8px 8px darkslategray;
     margin-top: 0px;
     margin-bottom: 0px;
@@ -19,7 +19,7 @@
 
 .message{
     margin-top: 0px;
-    font-size: 2rem;
+    font-size: 2vw;
     color: darkslategray;
     text-shadow: 5px 5px salmon;
 }
@@ -30,10 +30,11 @@
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    width: 8rem;
-    height: 2rem;
-    font-size: 1.5rem;
+    width: 10vw;
+    height: 5vh;
+    font-size: 1.5vw;
     box-shadow: 8px 8px salmon;
     color: white;
     letter-spacing: 0.3em;
+    margin-top: 1em;
   }

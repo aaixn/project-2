@@ -3,14 +3,14 @@
 .note {
     background-color: white;
     width: 20%;
-    box-shadow: 7px 7px darkslategray;
+    box-shadow: 10px 10px darkslategray;
     cursor: grab;
     font-family: 'Work Sans', sans-serif;
     padding: 5px;
     display: flex;
     flex-direction: column;
     color: #444444;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.9);
     padding: 0.5em;
     border-radius: 20px;
 }
@@ -21,10 +21,13 @@
 
 .note-title {
     color: salmon;
+    font-family: groovy, sans-serif;
+    font-size: 1.5vw;
 }
 
 .note-content {
     text-align: left;
     margin: 0 5px;
+    font-size: 1vw;
 }
 

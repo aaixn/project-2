@@ -6,11 +6,11 @@
     flex-direction: column;
     width: 40%;
     color: darkslategray;
-    box-shadow: 7px 7px darkslategray;
+    box-shadow: 10px 10px darkslategray;
     background-color: white;
     border: 1px solid;
     cursor: grab;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.9);
     padding: 0.5em;
     border-radius: 20px;
 }
@@ -26,19 +26,22 @@
     cursor: pointer;
     margin: 0px 0px;
     font-family: 'Work Sans', sans-serif;
+    font-size: 1vw;
 }
 
 .kanban-section > h3 {
     color: salmon;
     text-decoration: underline;
-    font-family: 'Work Sans', sans-serif;
+    font-family: groovy , sans-serif;
+    letter-spacing: 0.1em;
+    font-size: 1.2vw;
 }
 
 .kanban-section{
     display: flex;
     flex-direction: column;
     gap: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 1vh;
 }
 
 
@@ -47,4 +50,5 @@
     display: flex;
     justify-content: center;
     gap: 5px;
+    font-size: 1vw;
 }
