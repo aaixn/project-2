@@ -22,10 +22,7 @@ input {
   }
   
   input::-webkit-slider-thumb {
-    background-color: darkslategray;
-    height: 2vh;
-    width: 2vh;
-    border-radius: 50%;
+    height: 0;
     -webkit-appearance: none;
   }
 
