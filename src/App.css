@@ -1,10 +1,3 @@
-
-@font-face {
-  font-family: handwriting;
-  src: url(./Fonts/TNanti-Demo.otf);
-}
-
-
 @font-face {
   font-family: groovy;
   src: url(./Fonts/KeeponTruckin.ttf);
@@ -17,7 +10,6 @@
   height: 100vh;
   width: 100%;
   background-color: ivory;
-  /* background-image: url('https://i.imgur.com/UlPvCp3.png'); */
   background-size: cover;
   max-width: 100vw;
 }

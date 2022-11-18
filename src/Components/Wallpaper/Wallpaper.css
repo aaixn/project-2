@@ -1,5 +1,4 @@
 .wallpaper-list {
-    /* background-color: white; */
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -31,5 +30,4 @@
     color: darkslategray;
     text-shadow: 6px 6px salmon;
     font-size: 3rem;
-    /* background-color: cornsilk; */
 }
