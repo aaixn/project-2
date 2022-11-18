@@ -12,7 +12,7 @@ export default function DateTime() {
 
     return (
     <Draggable>
-        <div className='clock'>
+        <div className='date-time'>
             <h2>{date.toLocaleDateString('en-us', {month: 'long', day: 'numeric', year: 'numeric'})}</h2>
             <h1>{date.toLocaleTimeString([], {hour: '2-digit', minute: '2-digit'})}</h1>
         </div>

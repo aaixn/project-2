@@ -1,13 +1,15 @@
-.clock {
+.date-time {
     cursor: grab;
     width: 20%;
     background-color: rgba(255, 255, 255, 0.9);
     padding: 0.5em;
     border-radius: 20px;
     box-shadow: 10px 10px darkslategray;
-    letter-spacing: 0.05em;
     color: #444444;
     line-height: 2em;
     letter-spacing: 0.1em;
     font-size: 1vw;
+    position: fixed;
+    top: 0;
+    left: 0;
 }

@@ -3,6 +3,7 @@
   height: 100vh;
   overflow: hidden;
 }
+
 footer {
     position: absolute;
     bottom: 15px;
@@ -12,24 +13,24 @@ footer {
     padding-left: 5%;
     padding-right: 5%;
     z-index: 1;
-  }
+}
   
-  button {
-    font-family: groovy, sans-serif;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-  }
+button {
+  font-family: groovy, sans-serif;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
   
-  .quote-button {
-    font-size: 2rem;
-    padding-top: 15px;
-    padding-right: 15px;
-    color: darkslategray;
-    cursor: pointer;
-  }
+.quote-button {
+  font-size: 2rem;
+  padding-top: 15px;
+  padding-right: 15px;
+  color: darkslategray;
+  cursor: pointer;
+}
   
-  .quote-div {
-    display: flex;
-    flex-direction: row-reverse;
-  }
+.quote-div {
+  display: flex;
+  flex-direction: row-reverse;
+}

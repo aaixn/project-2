@@ -7,12 +7,13 @@
     width: 40%;
     color: darkslategray;
     box-shadow: 10px 10px darkslategray;
-    background-color: white;
-    border: 1px solid;
     cursor: grab;
     background-color: rgba(255, 255, 255, 0.9);
     padding: 0.5em;
     border-radius: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 .chart {
