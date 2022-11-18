@@ -8,7 +8,7 @@ Use this section to describe your final project and perhaps any links to relevan
 
 - [github repo](https://github.com/aaixn/study-space)
 - [deployment](https://study-space-10crpfv3q-aaixn.vercel.app/)
-- [demo recording]()
+- [demo recording](https://youtu.be/MZJB-6yODpw)
 
 ## Technologies/Sources
 - API: https://motivational-quote-api.herokuapp.com/
