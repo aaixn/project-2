@@ -32,11 +32,13 @@ Use this section to describe your final project and perhaps any links to relevan
 #### PostMVP
 
 - Add a kanban board
+	- allow user to move items within the kanban board
 - Add a notepad
 - Display user's date and time
 - Add a music player
 - Allow users to change wallpaper
 - Make widgets draggable
+- Implement color themes
 - Implement local storage
 
 ## Components
