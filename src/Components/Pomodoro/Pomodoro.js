@@ -16,7 +16,6 @@ const Pomodoro = () => {
 
     useEffect(() => {
         if (start === true) {
-
             let timer = setInterval(() => {
                 clearInterval(timer)
                 
@@ -35,8 +34,8 @@ const Pomodoro = () => {
                 } else {
                     setSec(sec - 1)
                 }
-    
             }, 1000)
+            
         }
     }, [sec, start, message, min])
 

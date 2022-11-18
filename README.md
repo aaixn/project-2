@@ -14,6 +14,7 @@ Use this section to describe your final project and perhaps any links to relevan
 - API: https://motivational-quote-api.herokuapp.com/
 - Wallpapers from https://imgur.com/user/IschemiaLad
 - Music from https://www.chosic.com/free-music/lofi/
+- https://letsbuildui.dev/articles/building-an-audio-player-with-react-hooks
 
 ## Wireframes & React Component Hierarchy
 
@@ -62,8 +63,9 @@ Use this section to describe your final project and perhaps any links to relevan
 | Working with API | H | 3hrs| 5hrs |
 | Adding Pomodoro Timer | H | 4hrs | 1.5hrs |
 | Making components draggable | M | 5hrs | 1hrs |
+| MusicPlayer component | L | 8hrs| 3hrs |
 | Styling | L | 10hrs| 7hrs |
-| Total | H | 6hrs| 5hrs |
+| Total | H | 30hrs| 22.5hrs |
 
 ## Additional Libraries/ Packages
  - Axios
@@ -72,18 +74,33 @@ Use this section to describe your final project and perhaps any links to relevan
 
 ## Code Snippet
 
-Use this section to include a brief code snippet of functionality that you are proud of and a brief description.  Code snippet should not be greater than 10 lines of code. 
+Snippet from Pomodoro component that conditionally changes timer when the time for each duration.
 
 ```
-function reverse(string) {
-	// here is the code to reverse a string of text
-}
+
+if (sec === 0) {
+	if(min === 0) {
+		let minutes = message ? 24 : 4
+		let seconds = 59
+
+		setSec(seconds)
+		setMin(minutes)
+		setMessage(!message)
+	} else {
+		setSec(59)
+		setMin(min-1)
+	}
+                
 ```
+
 
 ## Issues and Resolutions
- Use this section to list of all major issues encountered and their resolution.
 **ERROR**: blocked by CORS policy
 https://media.git.generalassemb.ly/user/45700/files/22848665-cbbc-4979-98b4-7eeaa28be1b8
 I had trouble with my initial API with CORS blocking me.
 
 **RESOLUTION**:  The workaround required an extension (https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf?hl=en) and the solution for the code was derived from (https://www.geeksforgeeks.org/reactjs-cors-options/). However, I ultimately didn't want users to need to download an extension to use the app, so I found a new API.
+
+**ERROR**: draggable components extended the homepage and made it scrollable
+
+**RESOLUTION**:  use overflow:hidden in the CSS file of the homepage
