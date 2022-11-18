@@ -19,7 +19,7 @@ Use this section to describe your final project and perhaps any links to relevan
 ## Wireframes & React Component Hierarchy
 
 - [wireframes](https://media.git.generalassemb.ly/user/45700/files/5a096ff8-1efb-4fa6-bcea-8157e4642c11)
-- [react architecture](https://files.slack.com/files-pri/T0351JZQ0-F04BG3ESMQS/image.png)
+- [react architecture](https://i.imgur.com/eqcbcoo.png)
 
 
 ## MVP/PostMVP 
