@@ -22,6 +22,5 @@ let wallpapers =
 'https://i.imgur.com/j0jJB8f.jpeg'
 ]
 
-// source: https://imgur.com/user/IschemiaLad
 
 export default wallpapers
