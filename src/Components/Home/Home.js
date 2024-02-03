@@ -24,8 +24,8 @@ export default function Home() {
 
 
   const getQuote = () => {
-    axios.get('https://motivational-quote-api.herokuapp.com/quotes/random')
-      .then(res => setQuote(res.data))
+    axios.get('https://type.fit/api/quotes')
+      .then(res => setQuote(res.data[0]))
   }
 
   const handleQuoteButton = () => {
