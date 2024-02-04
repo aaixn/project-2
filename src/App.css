@@ -9,6 +9,8 @@
   font-family: groovy, sans-serif;
   height: 100vh;
   width: 100%;
-  background-color: ivory;
+  margin-right: auto;
+  margin-left: auto;
   background-size: cover;
+  background-position: center;
 }

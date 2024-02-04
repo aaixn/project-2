@@ -24,8 +24,8 @@ export default function Home() {
 
 
   const getQuote = () => {
-    axios.get('https://motivational-quote-api.herokuapp.com/quotes/random')
-      .then(res => setQuote(res.data))
+    axios.get('https://type.fit/api/quotes')
+      .then(res => setQuote(res.data[0]))
   }
 
   const handleQuoteButton = () => {
@@ -39,7 +39,7 @@ export default function Home() {
 
     return (
     <div className='home'>
-        <div className='quote-div'><BsFillChatQuoteFill className='quote-button' onClick={handleQuoteButton} style={{fontSize: '2.5em'}}/></div>
+        <div className='quote-div'><BsFillChatQuoteFill className='quote-button' onClick={handleQuoteButton} style={{fontSize: '5vw'}}/></div>
         {quoteDisplay && <Quotes quote = {quote} quoteDisplay={quoteDisplay} setQuoteDisplay={setQuoteDisplay}/>}
         {pomodoroDisplay && <Pomodoro />}
         {kanbanDisplay && <Kanban />}
