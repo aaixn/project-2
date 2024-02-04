@@ -23,11 +23,11 @@ button {
 }
   
 .quote-button {
-  font-size: 2rem;
-  padding-top: 15px;
-  padding-right: 15px;
+  width: 2.5vw;
+  padding-right: 1vw;
   color: darkslategray;
   cursor: pointer;
+  margin-top: auto;
 }
   
 .quote-div {
