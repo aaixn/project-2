@@ -2,7 +2,7 @@
 
 ## Project Description
 
-Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
+A web application using React.js where users can personalize a study space using widgets, such as a Pomodoro timer, music player, KanBan board, notepad, etc. Widgets are created to be draggable using external libraries.
 
 ## Project Links
 
